@@ -1,5 +1,53 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 
-*{
-    font-family: 'DM Serif Display', serif;
+
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700&display=swap');
+
+:root {
+
+    --primary: #54e6ee;
+    --secondary: #f26bcf;
+    --third: #ffffff48;
+    --black: #000000;
+    --white: #ffffff;
+}
+
+.colorindex{
+    background: rgb(154,154,154);
+    background: radial-gradient(circle, rgba(154,154,154,0.9640231092436975) 50%, rgba(64,64,64,0.9416141456582633) 100%);
+}
+
+.colorliniker{
+    background: rgb(242,107,207);
+background: linear-gradient(90deg, rgba(242,107,207,1) 0%, rgba(84,230,238,1) 86%);
+}
+.maintitleheader{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display SC', serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.imgindex{
+    align-items: center;
+}
+
+
+.header{
+    border-bottom: 0.4 rem solid var(--third);
+    display: flex;
+    height: 6rem;
+}
+
+/* Rodapé */
+
+footer{
+    background-color: var(--third);
+    height: 4rem;
+}
+
+footer img{
+    height: 100%;
 }
