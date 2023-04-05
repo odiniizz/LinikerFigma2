@@ -1,6 +1,12 @@
 
 
+/* fontes */
+
   @import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Teko:wght@300&display=swap');
+
+/* configurações gerais */
 
 :root {
 
@@ -11,15 +17,59 @@
     --white: #ffffff;
 }
 
-.colorindex{
-    background: rgb(154,154,154);
-    background: radial-gradient(circle, rgba(154,154,154,0.9640231092436975) 50%, rgba(64,64,64,0.9416141456582633) 100%);
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
 }
+
+main{
+    margin: 4rem;
+}
+
+main a{
+    font-size: 1.5rem;
+    font-family: 'PT Serif', serif;
+    font-family: 'Teko', sans-serif;
+}
+
+.pinformation {
+
+    box-sizing: border-box;
+    font-family: 'PT Serif', serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+/* configurações gerais - páginas liniker*/ 
 
 .colorliniker{
     background: rgb(242,107,207);
 background: linear-gradient(90deg, rgba(242,107,207,1) 0%, rgba(84,230,238,1) 86%);
 }
+
+/* ************************************************************************************************* */
+
+/* index */
+
+.indexparagraph {
+    text-align: center;
+    margin-top: 5rem;
+    box-sizing: border-box;
+    font-family: 'PT Serif', serif;
+    font-weight: 400;
+    font-size: 1.35rem;
+    text-align: center;
+}
+
+.colorindex{
+    background: rgb(154,154,154);
+    background: radial-gradient(circle, rgba(154,154,154,0.9640231092436975) 50%, rgba(64,64,64,0.9416141456582633) 100%);
+}
+
+
+
 .maintitleheader{
     margin: 0;
     padding: 0;
@@ -30,28 +80,65 @@ background: linear-gradient(90deg, rgba(242,107,207,1) 0%, rgba(84,230,238,1) 86
     text-align: center;
 }
 
-.mainsecondparagraph{
 
-}
 
 .imgindex{
     align-items: center;
 }
 
+/* header */
+
+header{
+    background-color: var(--third);
+    height: 3rem;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    margin: var(--third);
+}
 
 .header{
-    border-bottom: 0.4 rem solid var(--third);
+    background-color: var(--third);
     display: flex;
-    height: 6rem;
+    height: 8rem;
+}
+
+.header{
+    width: 100%;
 }
 
 /* Rodapé */
 
 footer{
     background-color: var(--third);
-    height: 4rem;
+    height: 3rem;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+
 }
 
 footer img{
     height: 100%;
+}
+
+/* *********************************************************************** */
+
+
+figure {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+figure  a {
+    margin: 1rem;
+}
+
+article{
+    align-items: center;
+}
+
+#imglinikerfundoparalinikerprincipal {
+    height: 6rem;
 }
