@@ -6,7 +6,7 @@
 
     --primary: #54e6ee;
     --secondary: #f26bcf;
-    --third: #ffffff48;
+    --third: #ffffff26;
     --black: #000000;
     --white: #ffffff;
 }
@@ -28,6 +28,10 @@ background: linear-gradient(90deg, rgba(242,107,207,1) 0%, rgba(84,230,238,1) 86
     font-family: 'Playfair Display SC', serif;
     font-weight: 400;
     text-align: center;
+}
+
+.mainsecondparagraph{
+
 }
 
 .imgindex{
