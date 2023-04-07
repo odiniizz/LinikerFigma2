@@ -52,6 +52,14 @@ background: linear-gradient(90deg, rgba(242,107,207,1) 0%, rgba(84,230,238,1) 86
 /* ************************************************************************************************* */
 
 /* index */
+#indexheader{
+    background-color: var(--third);
+    height: 3rem;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    margin: var(--third);
+}
 
 .indexparagraph {
     text-align: center;
@@ -82,9 +90,42 @@ background: linear-gradient(90deg, rgba(242,107,207,1) 0%, rgba(84,230,238,1) 86
 
 
 
-.imgindex{
+#indeximglinikerprincipal{
     align-items: center;
+    border-radius: 50%;
+    width: 270px;
 }
+
+#indeximglinikerprincipal:hover {
+    transition: 0.8s;
+    border-radius: 10%
+    
+}
+
+#indeximglinikerprincipal figcaption p{
+    text-align: center;
+    font-size: 5ch;
+    opacity: 1;
+}
+
+#indeximglinikerprincipal:hover figcaption p{
+    text-align: center;
+    font-size: 5ch;
+    opacity: 0;
+    transition: 0,8s;
+}
+
+#indeximgartista2 {
+    align-items: center;
+    border-radius: 50%;
+    width: 270px;
+}
+
+#indeximgartista2:hover{
+    transition: 0.8s;
+    border-radius: 10%
+}
+
 
 /* header */
 
@@ -118,6 +159,14 @@ footer{
 
 }
 
+#footerindex{
+    background-color: var(--third);
+    height: 3rem;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+}
+
 footer img{
     height: 100%;
 }
@@ -142,3 +191,4 @@ article{
 #imglinikerfundoparalinikerprincipal {
     height: 6rem;
 }
+
