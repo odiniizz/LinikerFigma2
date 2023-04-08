@@ -42,9 +42,23 @@ main a{
     text-align: center;
 }
 
+.maintitleheader{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display SC', serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+main {
+    min-height: calc(100vh - 6.4rem);
+}
+
 /* configurações gerais - páginas liniker*/ 
 
-.colorliniker{
+.bodyliniker{
     background: rgb(242,107,207);
 background: linear-gradient(90deg, rgba(242,107,207,1) 0%, rgba(84,230,238,1) 86%);
 }
@@ -52,7 +66,7 @@ background: linear-gradient(90deg, rgba(242,107,207,1) 0%, rgba(84,230,238,1) 86
 /* ************************************************************************************************* */
 
 /* index */
-#indexheader{
+header{
     background-color: var(--third);
     height: 3rem;
     width: 100%;
@@ -71,104 +85,88 @@ background: linear-gradient(90deg, rgba(242,107,207,1) 0%, rgba(84,230,238,1) 86
     text-align: center;
 }
 
-.colorindex{
+#bodyindex{
     background: rgb(154,154,154);
     background: radial-gradient(circle, rgba(154,154,154,0.9640231092436975) 50%, rgba(64,64,64,0.9416141456582633) 100%);
 }
 
+#figureliniker {
+    display:inline-block;
+}
 
+section #figureliniker {
+    align-items:first baseline;
+}
 
-.maintitleheader{
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    box-sizing: border-box;
-    font-family: 'Playfair Display SC', serif;
-    font-weight: 400;
+#figureliniker figcaption{
     text-align: center;
-}
-
-
-
-#indeximglinikerprincipal{
-    align-items: center;
-    border-radius: 50%;
-    width: 270px;
-}
-
-#indeximglinikerprincipal:hover {
-    transition: 0.8s;
-    border-radius: 10%
-    
-}
-
-#indeximglinikerprincipal figcaption p{
-    text-align: center;
-    font-size: 5ch;
-    opacity: 1;
-}
-
-#indeximglinikerprincipal:hover figcaption p{
-    text-align: center;
-    font-size: 5ch;
-    opacity: 0;
+    font-size: 40px;
+    color: black;
+  } a:hover #figureliniker figcaption{
     transition: 0,8s;
+    top: 280px;
+    text-align: center;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+  }
+
+  #figureartista2 {
+    display:inline-block;
 }
 
-#indeximgartista2 {
-    align-items: center;
+  #figureartista2 figcaption{
+    padding: 3px;
+    text-align: center;
+    font-size: 40px;
+    color: black;
+  } a:hover #figureartista2 figcaption{
+    transition: 0,8s;
+    top: 280px;
+    text-align: center;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+  }
+
+.imgs{
     border-radius: 50%;
     width: 270px;
-}
-
-#indeximgartista2:hover{
+} a:hover .imgs{
     transition: 0.8s;
+    width: 280px;
     border-radius: 10%
 }
 
-
+.figcaption{
+    padding: 3px;
+    text-align: center;
+    font-size: 40px;
+    color: black;
+}
 /* header */
 
 header{
     background-color: var(--third);
-    height: 3rem;
+    height: 3.2rem;
     width: 100%;
     top: 0;
     position: fixed;
-    margin: var(--third);
-}
-
-.header{
-    background-color: var(--third);
-    display: flex;
-    height: 8rem;
-}
-
-.header{
-    width: 100%;
 }
 
 /* Rodapé */
 
 footer{
     background-color: var(--third);
-    height: 3rem;
+    height: 3.2rem;
     width: 100%;
     bottom: 0;
     position: fixed;
 
-}
-
-#footerindex{
-    background-color: var(--third);
-    height: 3rem;
-    width: 100%;
-    bottom: 0;
-    position: fixed;
 }
 
 footer img{
-    height: 100%;
+    height: 95%;
 }
 
 /* *********************************************************************** */
@@ -180,15 +178,11 @@ figure {
     margin-top: 5rem;
 }
 
-figure  a {
-    margin: 1rem;
-}
-
-article{
-    align-items: center;
-}
 
 #imglinikerfundoparalinikerprincipal {
     height: 6rem;
 }
 
+.sectionindex {
+    align-items: center;
+}
