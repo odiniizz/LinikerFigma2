@@ -56,6 +56,37 @@ main {
     min-height: calc(100vh - 6.4rem);
 }
 
+figure {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+/* header */
+
+header{
+    background-color: var(--third);
+    height: 3.2rem;
+    width: 100%;
+    top: 0;
+    position: fixed;
+}
+
+/* Rodapé */
+
+footer{
+    background-color: var(--third);
+    height: 3.2rem;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+
+}
+
+footer img{
+    height: 95%;
+}
+
 /* configurações gerais - páginas liniker*/ 
 
 .bodyliniker{
@@ -66,13 +97,10 @@ background: linear-gradient(90deg, rgba(242,107,207,1) 0%, rgba(84,230,238,1) 86
 /* ************************************************************************************************* */
 
 /* index */
-header{
-    background-color: var(--third);
-    height: 3rem;
-    width: 100%;
-    top: 0;
-    position: fixed;
-    margin: var(--third);
+
+#bodyindex{
+    background: rgb(154,154,154);
+    background: radial-gradient(circle, rgba(154,154,154,0.9640231092436975) 50%, rgba(64,64,64,0.9416141456582633) 100%);
 }
 
 .indexparagraph {
@@ -85,17 +113,9 @@ header{
     text-align: center;
 }
 
-#bodyindex{
-    background: rgb(154,154,154);
-    background: radial-gradient(circle, rgba(154,154,154,0.9640231092436975) 50%, rgba(64,64,64,0.9416141456582633) 100%);
-}
-
-#figureliniker {
-    display:inline-block;
-}
-
-section #figureliniker {
-    align-items:first baseline;
+.divindex #figureliniker {
+    display: inline-block;
+    align-items: center;
 }
 
 #figureliniker figcaption{
@@ -144,45 +164,100 @@ section #figureliniker {
     font-size: 40px;
     color: black;
 }
-/* header */
-
-header{
-    background-color: var(--third);
-    height: 3.2rem;
-    width: 100%;
-    top: 0;
-    position: fixed;
-}
-
-/* Rodapé */
-
-footer{
-    background-color: var(--third);
-    height: 3.2rem;
-    width: 100%;
-    bottom: 0;
-    position: fixed;
-
-}
-
-footer img{
-    height: 95%;
-}
 
 /* *********************************************************************** */
 
-
-figure {
+.divindex{
     display: flex;
     justify-content: center;
-    margin-top: 5rem;
 }
 
 
 #imglinikerfundoparalinikerprincipal {
     height: 6rem;
+    border-radius: 50%;
 }
 
-.sectionindex {
+.divindex {
     align-items: center;
+}
+
+.divlinikerp1 {
+    align-items: center;
+    margin-top: 0.25rem;
+}
+
+.imgs figcaption{
+    padding: 3px;
+    text-align: center;
+    font-size: 40px;
+    color: black;
+  } a:hover .imgs figcaption{
+    transition: 0,8s;
+    top: 280px;
+    text-align: center;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+  }
+
+  div.div1linikerp1 {
+    display: inline-block;
+    text-align: center;
+}
+
+div.div2linikerp1 {
+    display: inline-block;
+    text-align: center;
+}
+
+.imgsliniker1{
+    max-width:400px;
+    max-height: 400px;
+}
+
+#divliniker1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#divliniker1 {
+    align-self: center;
+}
+
+#divliniker2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#divliniker1 .imgsliniker1{
+    border-radius: 5%;
+    margin-inline-end: 0.5rem;
+}
+
+#divliniker2 {
+    align-self: center;
+}
+
+#divliniker2 .imgsliniker2{
+    border-radius: 5%;
+    margin-inline-end: 0.5rem;
+}
+
+#div2linikerp1 #figurelinikerfundoparaprincipal{
+    display: inline-block;
+}
+
+div.div2linikerp2 {
+    display: inline-block;
+    text-align: center;
+}
+
+#imgindigoparaprincipal {
+    height: 6rem;
+    border-radius: 50%;
 }
